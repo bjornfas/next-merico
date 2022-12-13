@@ -1,0 +1,23 @@
+
+@import "../variables.scss";
+
+.error-page {
+    &__text {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__link {
+        color: $blue;
+    }
+}
+
+//Media
+
+@media (max-width: 767px) {
+    .error-page {
+        &__text {
+            font-size: 16px;
+        }
+    }
+}

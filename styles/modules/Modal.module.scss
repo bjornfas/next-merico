@@ -1,0 +1,93 @@
+
+@import "../variables.scss";
+
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: .2s all linear;
+}
+
+.modal {
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+    color: $black;
+    border-radius: 20px;
+    max-width: 750px;
+    padding: 40px;
+    &__title {
+        font-family: "Poppins-SemiBold", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: $blue;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__item {
+        font-size: 20px;
+    }
+    &__close {
+        position: absolute;
+        background-image: url("../../public/images/close.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor:pointer;
+        width: 24px;
+        height: 24px;
+        right: 20px;
+        top: 20px;
+    }
+    &__span {
+        font-family: "Poppins-SemiBold", Arial, Helvetica, sans-serif;
+        color: $blue;
+        font-size: 25px;
+    }
+}
+
+//Media
+
+@media (max-width: 767px) {
+    .modal {
+        &__title {
+            font-size: 35px;
+        }
+        &__span {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .modal {
+        &__title {
+            font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .modal {
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

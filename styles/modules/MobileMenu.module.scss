@@ -1,0 +1,47 @@
+
+@import "../variables.scss";
+
+.mobile {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transition: .3s all;
+    background-color: $black;
+    animation-duration: .5s;
+    animation-name: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    color: $blue;
+}
+
+@keyframes menu {
+    from {top:-100%;}
+
+    to {top:0;}
+}
+
+//Media
+
+@media (max-width: 767px) {
+    .mobile__nav {
+        ul {
+            width: 100%;
+            flex-direction: column;
+        }
+        li {
+            margin: 0;
+        }
+        a {
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            padding: 30px;
+        }
+    }
+}
+

@@ -1,0 +1,103 @@
+
+@import "../variables.scss";
+
+.sign-up {
+    /*! keep */
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        font-size: 25px;
+        text-align: center;
+    }
+    &__form {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 40%;
+    }
+    &__label {
+        position: relative;
+        width: 100%;
+        margin-bottom: 80px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__input {
+        position: relative;
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $gray;
+        font-size: 25px;
+        &::placeholder {
+            font-size: 25px;
+            color: $white;
+        }
+    }
+    &__btn {
+        width: 100%;
+    }
+    &__icon {
+        position: absolute;
+        right: 20px;
+        top: 5px; 
+    }
+}
+
+//Media
+
+@media (max-width: 1440px) {
+    .sign-up {
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__input {
+            font-size: 20px;
+            &::placeholder {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sign-up {
+        &__form {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .sign-up {
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__form {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__label {
+            width: auto;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+        &__icon {
+            max-width: 20px;
+        }
+        &__input {
+            font-size: 16px;
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+    }
+}

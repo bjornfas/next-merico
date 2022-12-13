@@ -1,0 +1,56 @@
+
+@import "../variables.scss";
+
+.footer {
+    padding: 90px 0 20px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__email {
+        font-size: 27px;
+        color: $gray;
+        transition: .3s all;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+//Media
+
+@media (max-width: 1440px) {
+    .footer {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding-top: 50px;
+        &__email {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        padding-top: 30px;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__info {
+            margin-bottom: 20px;
+        }
+        &__email {
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+}

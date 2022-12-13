@@ -1,0 +1,63 @@
+
+@import "../variables.scss";
+
+.creators {
+    /*! keep */
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    &__heading {
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-family: "Poppins-SemiBold", Arial, Helvetica, sans-serif;
+    }
+    &__icon {
+        margin-right: 10px;
+    }
+    &__description {
+        font-size: 22px;
+        color: $gray;
+    }
+}
+
+//Media
+
+@media (max-width: 1440px) {
+    .creators {
+        &__heading {
+            font-size: 25px;
+        }
+        &__description {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .creators {
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__heading {
+            font-size: 18px;
+        }
+        &__description {
+            font-size: 16px;
+        }
+    }
+}

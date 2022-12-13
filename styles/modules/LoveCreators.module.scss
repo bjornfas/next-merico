@@ -1,0 +1,72 @@
+
+@import "../variables.scss";
+
+.love-creators {
+    /*! keep */
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        flex-wrap: wrap;
+    }
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__avatar {
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-family: "Poppins-Bold", Arial, Helvetica, sans-serif;
+        font-size: 35px;
+    }
+    &__profession {
+        font-size: 20px;
+        color: $gray;
+        margin-bottom: 20px;
+    }
+    &__social {
+        font-size: 20px;
+        color: $white;
+        transition: .3s all;
+        &:hover {
+            color: $blue;
+        }
+        &:after {
+            margin-left: 10px;
+            content: url("../../public/images/arrow.svg");
+        }
+    }
+}
+
+//Media
+
+@media (max-width: 575px) {
+    .love-creators {
+        &__name {
+            font-size: 25px;
+        } 
+        &__profession {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &__social {
+            font-size: 16px;
+        } 
+    }
+}
+
+@media (max-width: 475px) {
+    .love-creators {
+        &__name {
+            font-size: 20px;
+        }
+        &__wrapper {
+            gap: 50px;
+        }
+    }
+}
