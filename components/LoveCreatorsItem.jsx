@@ -12,7 +12,7 @@ import {motion} from "framer-motion";
 //Styles
 import styles from "../styles/modules/LoveCreators.module.scss";
 
-export const LoveCreatorsItem = forwardRef(({image, name, prof, link}, ref) => {
+const LoveCreatorsItem = forwardRef(({image, name, prof, link}, ref) => {
     return (
         <div className={styles["love-creators__item"]} ref={ref}>
             <Image 
@@ -34,5 +34,7 @@ export const LoveCreatorsItem = forwardRef(({image, name, prof, link}, ref) => {
         </div>
     )
 })
+
+LoveCreatorsItem.displayName = "LoveCreatorsItem";
 
 export const MLoveCreatorsItem = motion(LoveCreatorsItem);
