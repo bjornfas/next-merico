@@ -75,7 +75,7 @@ const Creators = () => {
                             Lower Workload
                         </div>
                         <div className={styles.creators__description}>
-                            Just share one link. We'll handle the rest.
+                            Just share one link. We all handle the rest.
                         </div>
                     </motion.div>
                     <motion.div className={styles.creators__item} custom={4} variants={creatorsAnimation}>

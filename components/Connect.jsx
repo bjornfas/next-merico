@@ -1,4 +1,7 @@
 
+//Next
+import Link from "next/link";
+
 //Framer Motion
 import {motion} from "framer-motion";
 
@@ -42,9 +45,9 @@ const Connect = () => {
                     Bring all of your content together and get a Homepage that <br />
                     automatically updates whenever you create anywhere online.
                 </motion.div>
-                <a href="/blog" className={`${styles.connect__btn} inverse`}>
+                <Link href="/blog" className={`${styles.connect__btn} inverse`}>
                     View Avaliable Sources
-                </a>
+                </Link>
             </div>
         </motion.section>
     )

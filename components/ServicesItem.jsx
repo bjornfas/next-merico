@@ -10,7 +10,7 @@ import {motion} from "framer-motion";
 //Styles
 import styles from "../styles/modules/Services.module.scss";
 
-const ServicesItem = forwardRef(({image, name}, ref) => {
+export const ServicesItem = forwardRef(({image, name}, ref) => {
     return (
         <div className={styles.services__item} ref={ref}>
             <Image 
